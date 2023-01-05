@@ -2,13 +2,13 @@ import React, { Component } from "react";
 
 export default class Input extends Component {
   render() {
-    const { type, children, placeholder, handleChange, value, name } =
+    const { type, children, placeholder, handleChange, value, name, id } =
       this.props;
     return (
       <div className="Input-box">
         <label htmlFor={type}>{children}</label>
         <input
-          id={type}
+          id={id}
           type={type}
           placeholder={placeholder}
           onChange={handleChange}

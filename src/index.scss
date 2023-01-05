@@ -144,6 +144,7 @@ a {
 // Start Or Line
 .line {
     display: flex;
+    align-items: center;
     color: #BABABA;
 }
 
@@ -153,6 +154,7 @@ hr {
     background-color: #F5F5F5;
     margin-left: 5px;
     margin-right: 5px;
+    height: 1px;
 }
 
 // End Or Line

@@ -145,6 +145,7 @@ export default class SignUp extends Component {
               <div className="content-signUp">
                 <Input
                   type="email"
+                  id="email"
                   placeholder="Enter email address"
                   name="email"
                   handleChange={this.handleChange}
@@ -157,6 +158,7 @@ export default class SignUp extends Component {
 
                 <Input
                   type="password"
+                  id="password"
                   placeholder="Password"
                   name="password"
                   handleChange={(e) => {
@@ -175,6 +177,7 @@ export default class SignUp extends Component {
 
                 <Input
                   type="password"
+                  id="repeatPassword"
                   placeholder="Repeat password"
                   name="repeatPassword"
                   handleChange={this.handleChange}

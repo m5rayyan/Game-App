@@ -110,6 +110,7 @@ export default class LogIn extends Component {
             <div className="form">
               <Input
                 type="email"
+                id="email"
                 placeholder="Write your email"
                 handleChange={this.handleChange}
                 value={this.state.email}
@@ -124,6 +125,7 @@ export default class LogIn extends Component {
               <div className="pass-input">
                 <Input
                   type={this.state.showPassword ? "text" : "password"}
+                  id="password"
                   placeholder="•••••••••"
                   value={this.state.password}
                   handleChange={this.handleChange}
@@ -146,7 +148,11 @@ export default class LogIn extends Component {
               </div>
 
               <div className="login-btn">
-                <Btn isValid={this.state.isValid} link="/home">
+                <Btn
+                  isValid={this.state.isValid}
+                  inValid={this.state.errors}
+                  link="/home"
+                >
                   Login
                 </Btn>
               </div>
