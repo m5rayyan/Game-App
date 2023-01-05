@@ -6,6 +6,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -398,7 +404,7 @@ hr {
     flex-direction: row-reverse;
 }
 
-/* form style  */
+// Start Form
 form .Back {
     border: none;
     background: transparent;
@@ -449,7 +455,6 @@ form .Back {
     height: 18px;
 }
 
-/* responsive style  */
 @media (max-width: 1344px) {
     .content-left-section {
         display: none;
