@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;600;700&family=Roboto:wght@300;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gayathri:wght@100;400;700&family=Inter:wght@100;200;300;400;600;700&family=Roboto:wght@300;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gayathri:wght@100;400;700&family=Inter:wght@100;200;300;400;600;700&family=Roboto:wght@300;500&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Start Global Button
+.btn {
+    background: #1565d8;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-family: Inter;
+    font-style: normal;
+    height: 64px;
+    text-align: center;
+    width: 100%;
+    padding: 0 30px;
+}
+
+// End Global Button
+.container {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    min-height: 1024px;
+}
+
+@media (max-width: 1344px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+// Start Errors
+.errors {
+    color: #f00;
+    font-weight: 600;
+}
+
+.success {
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    background: #0f0;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+}
+
+// End Errors
+// Start progress password
+#progress {
+    height: 7px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.bad {
+    width: 25%;
+    background: rgb(255, 0, 0);
+    height: 7px;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.weak {
+    width: 50%;
+    background: rgb(198, 224, 1);
+    height: 7px;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.medium {
+    width: 75%;
+    background: rgb(249, 204, 3);
+    height: 7px;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.strong {
+    width: 100%;
+    background: #0f0;
+    height: 7px;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.address {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.worse::after {
+    content: 'Is very weak but you know you can do it better';
+    color: rgb(255, 0, 0);
+}
+
+.notBad::after {
+    content: 'Not bad but you know you can do it better';
+    color: rgb(198, 224, 1);
+}
+
+.better::after {
+    content: 'Good but you can do it better';
+    color: rgb(249, 204, 3);
+}
+
+.TheBest::after {
+    content: 'Very Good ,The best';
+    color: #0f0;
+}
+
+// End progress password
+
+// Start Or Line
+.line {
+    display: flex;
+    color: #BABABA;
+}
+
+hr {
+    width: 50%;
+    border: none;
+    background-color: #F5F5F5;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+// End Or Line
+// Start Global Input
+.Input-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.Input-box input {
+    height: 64px;
+    border: 1px solid #8692A6;
+    border-radius: 6px;
+    padding: 0 30px;
+}
+
+.Input-box .empty {
+    outline: 2px solid #f00;
+    border: none;
+}
+
+.Input-box input::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8692A6;
+}
+
+.Input-box label {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #696F79;
+}
+
+// End Global Input
+// Start LoginBtn
+.form-content .login-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    border: none;
+    margin-top: 32px;
+    padding: 30px 50px;
+}
+
+.form-content .login-btn span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    margin-left: 35%;
+}
+
+// End LoginBtn
+
+// Start Social
+.social-img {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: 15px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .social-img {
+        width: 40px;
+        margin: 3px;
+    }
+}
+
+// End Social
+
+// Start Left Section
+.left-section {
+    position: relative;
+}
+
+.left-section-content {
+    padding: 65px 80px;
+}
+
+.left-section-content p {
+    width: 473px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #696F79;
+}
+
+.left-section-content span.quotation {
+    display: block;
+    font-family: 'Gayathri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    color: #BABABA;
+    margin-top: 150px;
+}
+
+.left-section-content span.signature {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+    color: #696F79;
+    margin-top: 90px;
+}
+
+.left-section-content .img-box {
+    position: absolute;
+    top: 550px;
+    right: -150px;
+}
+
+.social-media-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// End Left Section 
+// Right Section
+.right-section {
+    padding: 200px;
+    padding-top: 150px;
+}
+
+.right-section h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    color: #000000;
+}
+
+.right-section p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #8692A6;
+}
+
+.right-section .form {
+    margin-top: 35px;
+}
+
+.right-section .login-btn {
+    margin-top: 53px;
+}
+
+.right-section .final-stat {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #696F79;
+    margin-top: 27px;
+}
+
+.right-section .final-stat span {
+    color: #1565D8;
+    cursor: pointer;
+}
+
+.pass-input {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    top: 55px;
+    cursor: pointer;
+    width: 30px;
+    right: 20px;
+}
+
+@media (max-width: 700px) {
+    .social-media-box {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1344px) {
+    .left-section {
+        display: none;
+    }
+
+    .right-section {
+        padding: 50px;
+    }
+}
+
+// Start SignUp page
+
+.content-left-section {
+    background: url(assets/image/background.png);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.content-left-section .leftSide {
+    background: #1565d8;
+    background-size: cover;
+    height: 89%;
+    opacity: .9;
+    padding: 58px 82px;
+}
+
+.content-left-section .leftSide .quotation {
+    display: block;
+    font-family: 'Gayathri',sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    color: #00DAF7;
+    margin-top: 218px;
+}
+
+.content-left-section p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-top: 330px;
+}
+
+.content-left-section .signature {
+    display: block;
+    margin-top: 60px;
+}
+
+.content-left-section .img-edge {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* form style  */
+form .Back {
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8692A6;
+    cursor: pointer;
+}
+
+.content-right-section {
+    padding: 75px 35px;
+}
+
+.content-right-section .form-content {
+    padding: 20px 160px;
+}
+
+.form-content h1 {
+    width: 415px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.form-content .title p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #8692A6;
+    margin-bottom: 16px;
+}
+
+.check-box {
+    padding-bottom: 33px;
+    padding-top: 24px;
+}
+
+.check-box label {
+    display: flex;
+    align-items: center;
+}
+
+.check-box input {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+}
+
+/* responsive style  */
+@media (max-width: 1344px) {
+    .content-left-section {
+        display: none;
+    }
+}
+
+// End SignUp page
