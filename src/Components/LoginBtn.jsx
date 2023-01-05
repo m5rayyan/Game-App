@@ -1,7 +1,5 @@
 import { useNavigate } from "react-router-dom";
 
-//style link
-
 //image
 import GoogleLogo from "../assets/image/google-login.svg";
 
