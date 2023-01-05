@@ -1,16 +1,8 @@
+// Global Imports
 import React, { Component } from "react";
 import { object, string } from "yup";
 import { Link } from "react-router-dom";
-
-//components
-import Container from "../Components/Container";
-import OrLine from "../Components/OrLine";
-import Social from "../Components/Social";
-import Input from "../Components/Input";
-import Error from "../Components/Error";
-import Btn from "../Components/Button";
-
-//images
+// Import Images
 import google from "./../assets/image/flat-color-icons_google.png";
 import twitter from "./../assets/image/logos_twitter.png";
 import linkedin from "./../assets/image/cib_linkedin-in.png";
@@ -19,6 +11,13 @@ import logo from "./../assets/image/logo2.png";
 import img from "./../assets/image/img.png";
 import showEye from "./../assets/image/eye.png";
 import hideEye from "./../assets/image/hideeye.jpg";
+// Import Components
+import Container from "../Components/Container";
+import OrLine from "../Components/OrLine";
+import Social from "../Components/Social";
+import Input from "../Components/Input";
+import Error from "../Components/Error";
+import Btn from "../Components/Button";
 
 export default class LogIn extends Component {
   state = {

@@ -1,12 +1,12 @@
+// Global Imports
+
 import React, { Component } from "react";
 import * as yup from "yup";
 import { Link } from "react-router-dom";
-
-//image
+// Import Images
 import logo from "../assets/image/Logo1.png";
 import img from "../assets/image/edge.png";
-
-//components
+// Import Components
 import Input from "../Components/Input";
 import Container from "../Components/Container";
 import OrLine from "../Components/OrLine";
@@ -16,7 +16,6 @@ import Btn from "../Components/Button";
 import LogInBtn from "../Components/LoginBtn";
 
 export default class SignUp extends Component {
-  //states
   state = {
     email: "",
     password: "",
@@ -51,18 +50,15 @@ export default class SignUp extends Component {
     selected: yup.boolean().oneOf([true], "checkbox is required").required(),
   });
 
-  //handle input change
   handleChange = (e) => {
     const { name, value } = e.target;
     this.setState({ [name]: value });
   };
 
-  //handle checkbox
   toggleCheckbox = () => {
     this.setState((prev) => ({ selected: !prev.selected }));
   };
 
-  //handle submit
   handleSubmit = (e) => {
     e.preventDefault();
     this.schema
@@ -89,10 +85,9 @@ export default class SignUp extends Component {
       });
   };
 
-  //strength password
+  //Strength password
   calculatePasswordStrength(password) {
     let score = 0;
-    // Calculate the strength of the password here
     if (password.length >= 8) {
       score += 1;
     }
